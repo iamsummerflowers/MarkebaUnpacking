@@ -4,6 +4,11 @@ import './App.css';
 import { Link } from 'react-router-dom';
 import Navbar from './Header/Navbar.js';
 import Hero from './Main/Hero.js';
+import About from './Main/About.js';
+import Author from './Main/Author.js';
+import Purchase from './Main/Purchase.js';
+
+
 import Footer from './Footer/Footer.js';
 
 import {defaultConfig} from './Data/defaultConfig';
@@ -17,19 +22,19 @@ function App({config = defaultConfig} ) {
           <main>
             <Hero />
             <div className="section-divider mx-auto w-4/5 max-w-2xl"/>
-            {/* <About />
+            <About />
             <div className="section-divider mx-auto w-4/5 max-w-2xl"/>
             <Author />
             <div className="section-divider mx-auto w-4/5 max-w-2xl"/>
-            <Reviews />
+            {/* <Reviews />
             <div className="section-divider mx-auto w-4/5 max-w-2xl"/>
             <Events />
             <div className="section-divider mx-auto w-4/5 max-w-2xl"/>
             <Media />
-            <div className="section-divider mx-auto w-4/5 max-w-2xl"/>
+            <div className="section-divider mx-auto w-4/5 max-w-2xl"/> */}
             <Purchase />
             <div className="section-divider mx-auto w-4/5 max-w-2xl"/>
-            <Contact /> */}
+            {/* <Contact /> */}
           </main>
           <Footer />
         </div>
