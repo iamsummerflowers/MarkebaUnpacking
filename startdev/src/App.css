@@ -6,13 +6,23 @@
   --background-color: #a0a4b8;
   --temp-border: solid 2px lime;
 
-  --terracotta: #E07A5F;
+  /* --terracotta: #E07A5F;
   --warm-sand: #F4A261;
   --clay-brown: #8B4513;
   --sage-green: #9CAF88;
   --dusty-rose: #C08B80;
   --cream: #FFF8F0;
   --dark-earth: #2C1810;
+  --soft-linen: #FAF0E6; */
+
+
+  --terracotta: #fbb022;
+  --warm-sand: #b43108;
+  --clay-brown: #989365;
+  --sage-green: #9CAF88;
+  --dusty-rose: #1f5e61;
+  --cream: #FFF8F0;
+  --dark-earth: #1f5e61;
   --soft-linen: #FAF0E6;
 }
 

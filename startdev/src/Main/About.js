@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 import {defaultConfig} from '../Data/defaultConfig';
 
-    function About({config = defaultConfig, className }) {
+    function About({config = defaultConfig }) {
       const [ref, inView] = useInView();
       const baseSize = config.font_size;
 
@@ -52,7 +52,7 @@ import {defaultConfig} from '../Data/defaultConfig';
                         onMouseEnter={e => e.currentTarget.style.background = `${config.primary_action_color}12`}
                         onMouseLeave={e => e.currentTarget.style.background = `${config.primary_action_color}06`}
                       >
-                        <span className="text-2xl mt-0.5">{t.icon}</span>
+                        <span className="text-2xl mt-0.5 w-fit">{t.icon}</span>
                         <div>
                           <span className="font-body font-semibold block" style={{ fontSize: `${baseSize * 0.95}px`, color: config.text_color }}>{t.title}</span>
                           <span className="font-body" style={{ fontSize: `${baseSize * 0.85}px`, color: config.text_color + '99' }}>{t.desc}</span>
@@ -82,7 +82,7 @@ import {defaultConfig} from '../Data/defaultConfig';
                 ))}
               </div>
               <div className="mt-6 pt-6" style={{ borderTop: `1px solid ${config.primary_action_color}10` }}>
-                <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold font-body" style={{ background: '#9CAF8820', color: '#6B8F5B' }}>
+                <span className="w-fit inline-block px-4 py-1.5 rounded-full text-xs font-semibold font-body" style={{ background: '#9CAF8820', color: '#6B8F5B' }}>
                   Literary Fiction · Historical · Family Saga
                 </span>
               </div>

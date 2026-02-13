@@ -10,12 +10,12 @@ import { useState, useEffect, useRef } from 'react';
       const [activeSection, setActiveSection] = useState('hero');
 
       const links = [
-        { id: 'about', label: 'About' },
-        { id: 'author', label: 'Author' },
-        { id: 'reviews', label: 'Reviews' },
-        { id: 'events', label: 'Events' },
-        { id: 'media', label: 'Media' },
-        { id: 'buy', label: 'Buy Now' }
+        { id: 'about', label: 'About the Book' },
+        { id: 'author', label: 'Meet the Author' },
+        // { id: 'reviews', label: 'Reviews' },
+        // { id: 'events', label: 'Events' },
+        // { id: 'media', label: 'Media' },
+        // { id: 'buy', label: 'Buy Now' }
       ];
 
       useEffect(() => {
@@ -43,7 +43,7 @@ import { useState, useEffect, useRef } from 'react';
 
       return (
         <nav
-          className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 nav-glass xxbg-white"
+          className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 nav-glass bg-white"
           style={{
             // background: scrolled ? `${config.background_color}f0` : `${config.background_color}33`,
             borderBottom: scrolled ? `1px solid ${config.primary_action_color}20` : '1px solid transparent',

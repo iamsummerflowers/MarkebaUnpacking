@@ -8,6 +8,8 @@ import { useInView } from 'react-intersection-observer';
 import {defaultConfig} from '../Data/defaultConfig';
 import Section from './Section.js';
 import BookCoverSVG from './BookCoverSVG.js';
+import heroImage1 from "../assets/heroImage1.jpeg";
+import heroImage2 from "../assets/heroImage2.jpg";
 
 
 
@@ -16,13 +18,25 @@ function Hero({config = defaultConfig}) {
       const baseSize = config.font_size;
 
       return (
-        <Section id="hero" className="hero-gradient pattern-lines" bg="">
-          <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 md:pt-36 md:pb-28">
+        <Section id="hero" className="hero-gradient pattern-lines" bg=""
+      
+        >
+          <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 md:pt-36 md:pb-28"
+          
+                        style={{
+              backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(${heroImage1})`,
+              backgroundPosition: 'top',
+              backgroundSize: '100%',
+              backgroundRepeat: 'no-repeat'
+              // transform: `translateY(${scrollY * 0.5}px)`
+            }}
+          
+          >
             <div className="xxbg-red-400 flex flex-col md:flex-row items-center gap-12 xxmd:gap-26 xxlg:gap-2">
               <div className={`xxbg-yellow-400 px-20 xxflex-1 text-center md:text-left mx-auto xxmb-40 ${inView ? 'animate-slide-left' : 'opacity-start'}`}>
                 <span
                   className="inline-block px-4 py-1.5 rounded-full w-fit text-xs font-semibold tracking-widest uppercase mb-6 font-body"
-                  style={{ background: config.primary_action_color + '25', color: '#F4A261' }}
+                  style={{ background: config.primary_action_color + '25', color: '#fbb022' }}
                 >
                   New Release — Available Now
                 </span>
@@ -31,7 +45,7 @@ function Hero({config = defaultConfig}) {
                   style={{
                     fontFamily: `${config.font_family}, 'Playfair Display', Georgia, serif`,
                     fontSize: `${baseSize * 3}px`,
-                    color: '#C08B80'
+                    color: '#f0f0f0'
                   }}
                 >
                   {config.book_title}
@@ -41,14 +55,14 @@ function Hero({config = defaultConfig}) {
                   style={{
                     fontFamily: `${config.font_family}, 'Playfair Display', Georgia, serif`,
                     fontSize: `${baseSize * 1.25}px`,
-                    color: '#251e16cc'
+                    color: '#f0f0f0'
                   }}
                 >
                   {config.book_subtitle}
                 </p>
                 <p
                   className="font-body mb-6"
-                  style={{ fontSize: `${baseSize * 1.125}px`, color: '#251e16cc' }}
+                  style={{ fontSize: `${baseSize * 1.125}px`, color: '#f0f0f0' }}
                 >
                   {config.tagline}
                 </p>
@@ -56,7 +70,7 @@ function Hero({config = defaultConfig}) {
                   className="font-body mb-8"
                   style={{ fontSize: `${baseSize * 0.9}px`, color: '#FAF0E6aa', letterSpacing: '2px' }}
                 >
-                  by <span className="font-semibold" style={{ color: '#F4A261' }}>{config.author_name}</span>
+                  by <span className="font-semibold" style={{ color: '#fbb022' }}>{config.author_name}</span>
                 </p>
                 <div className="mb-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                   <button
@@ -69,12 +83,12 @@ function Hero({config = defaultConfig}) {
                   <button
                     className="px-8 py-3.5 rounded-full font-semibold cursor-pointer font-body bg-transparent"
                     style={{
-                      border: `2px solid ${config.primary_action_color}80`,
-                      color: '#251e16cc',
+                      border: `2px solid ${config.secondary_action_color}80`,
+                      color: '#f0f0f0',
                       fontSize: `${baseSize}px`
                     }}
                     onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                    onMouseEnter={e => { e.target.style.background = config.primary_action_color + '20'; }}
+                    onMouseEnter={e => { e.target.style.background = config.secondary_action_color + '20'; }}
                     onMouseLeave={e => { e.target.style.background = 'transparent'; }}
                   >
                     Read More
