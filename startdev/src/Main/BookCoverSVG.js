@@ -2,7 +2,7 @@ import React from 'react';
 import './BookCoverSVG.css';
 import { Link } from 'react-router-dom';
 import { VscGithub } from "react-icons/vsc";
-import bookImage from "../assets/heroImage2a.png";
+import bookImage from "../assets/heroImage1a.jpeg";
 
 function BookCoverSVG({ className }) {
     return (

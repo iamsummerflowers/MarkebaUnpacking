@@ -26,14 +26,14 @@ function Hero({config = defaultConfig}) {
                         style={{
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(${heroImage1})`,
               backgroundPosition: 'top',
-              backgroundSize: '100%',
+              backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat'
               // transform: `translateY(${scrollY * 0.5}px)`
             }}
           
           >
             <div className="xxbg-red-400 flex flex-col md:flex-row items-center gap-12 xxmd:gap-26 xxlg:gap-2">
-              <div className={`xxbg-yellow-400 px-20 xxflex-1 text-center md:text-left mx-auto xxmb-40 ${inView ? 'animate-slide-left' : 'opacity-start'}`}>
+              <div className={`xxbg-yellow-400 px-20 xxflex-1 text-center mx-auto md:text-left mx-auto xxmb-40 ${inView ? 'animate-slide-left' : 'opacity-start'}`}>
                 <span
                   className="inline-block px-4 py-1.5 rounded-full w-fit text-xs font-semibold tracking-widest uppercase mb-6 font-body"
                   style={{ background: config.primary_action_color + '25', color: '#fbb022' }}
@@ -41,10 +41,10 @@ function Hero({config = defaultConfig}) {
                   New Release — Available Now
                 </span>
                 <h1
-                  className="xxbg-red-400 font-display font-bold leading-tight mb-6"
+                  className="xxbg-red-400 w-fit text-center px-0 mx-0 font-display font-bold leading-tight mb-6"
                   style={{
                     fontFamily: `${config.font_family}, 'Playfair Display', Georgia, serif`,
-                    fontSize: `${baseSize * 3}px`,
+                    fontSize: `${baseSize * 2}px`,
                     color: '#f0f0f0'
                   }}
                 >
