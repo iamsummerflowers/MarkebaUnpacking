@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider, Route} from 'react-router-dom';
+// import {defaultConfig} from './Data/defaultConfig';
 
 const router = createBrowserRouter ([
     {
@@ -15,7 +16,7 @@ const router = createBrowserRouter ([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <RouterProvider router={(router)}>
-    <App />
+    <App/>
   </RouterProvider>
 );
 
