@@ -48,13 +48,13 @@ import authorImage from "../assets/authorImage1.jpg";
               <div className={`flex-1 ${inView ? 'animate-slide-right delay-300' : 'opacity-start'}`}>
                 <div className="space-y-5">
                   <p className="font-body leading-relaxed" style={{ fontSize: `${baseSize * 1.05}px`, color: config.text_color + 'dd' }}>
-                    <strong style={{ color: config.text_color }}>Mirabel Thornwood</strong> is a writer, ethnobotanist, and former war correspondent whose work explores the intersection of memory, landscape, and human resilience. Born in Santa Fe, New Mexico, she spent a decade reporting from conflict zones across the Mediterranean before turning to fiction.
+                    <strong style={{ color: config.text_color }}>Sontae Flowers</strong>  is a debut author, entrepreneur, and introspective storyteller whose journey has taken her from the vibrant streets of New Orleans to the rolling hills of Northern California and back to her Louisiana roots in Slidell.
                   </p>
                   <p className="font-body leading-relaxed" style={{ fontSize: `${baseSize * 1.05}px`, color: config.text_color + 'dd' }}>
-                    Her debut novel, <em>Roots of Salt</em> (2019), was longlisted for the National Book Award and translated into fourteen languages. She holds an MFA from the Iowa Writers' Workshop and a PhD in Ecological Anthropology from UC Berkeley.
-                  </p>
+                    Born in 1972, Sontae holds an MBA and brings a unique blend of business acumen and creative insight to her writing. Her first book, Markeba: Unpacking my Journey, explores the deeply personal significance of her middle name—a name she once set aside but later reclaimed as a symbol of light, growth, and transformation.
+                    </p>
                   <p className="font-body leading-relaxed" style={{ fontSize: `${baseSize * 1.05}px`, color: config.text_color + 'dd' }}>
-                    She currently lives between Oaxaca, Mexico, and the Sangre de Cristo Mountains with her partner, two rescue dogs, and an ever-expanding library.
+                    A mother of two, Summer and Tyler, Sontae writes with honesty and heart, inviting readers to reflect on their own journeys of self-discovery and the hidden meanings that shape who we become.
                   </p>
                 </div>
 

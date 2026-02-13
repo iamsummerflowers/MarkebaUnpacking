@@ -24,7 +24,7 @@ import {defaultConfig} from '../Data/defaultConfig';
                 About the Book
               </span>
               <h2 className="font-display font-bold mb-4" style={{ fontFamily: `${config.font_family}, 'Playfair Display', Georgia, serif`, fontSize: `${baseSize * 2.25}px`, color: config.text_color }}>
-                A Story Unearthed
+                A Journey Unpacked
               </h2>
               <div className="w-16 h-1 mx-auto rounded-full" style={{ background: `linear-gradient(90deg, ${config.primary_action_color}, #F4A261)` }}/>
             </div>
@@ -32,13 +32,13 @@ import {defaultConfig} from '../Data/defaultConfig';
             <div className="grid md:grid-cols-2 gap-12 lg:gap-16 mb-16">
               <div className={`space-y-5 ${inView ? 'animate-slide-left delay-200' : 'opacity-start'}`}>
                 <p className="font-body leading-relaxed" style={{ fontSize: `${baseSize * 1.05}px`, color: config.text_color + 'dd' }}>
-                  When Lena Vasquez inherits her grandmother's crumbling farmhouse in the Andalusian foothills, she expects dust, silence, and a quick sale. Instead, she discovers a leather journal buried beneath the olive grove — and with it, a legacy that rewrites everything she thought she knew about her family.
+                  My birth-given middle name, Markeba, has always been a bit of an enigma in my life. It was given to me by my mom, inspired by a neighbor/friend who was reading a book. My understanding is that my first and middle names are from this book. Having unique names like Sontae and Markeba, which are often reimagined and mispronounced, can sometimes make them difficult to share. People often struggled with my first name, so I rarely mentioned my middle name, keeping it mostly to myself as something personal and almost burdensome.
                 </p>
                 <p className="font-body leading-relaxed" style={{ fontSize: `${baseSize * 1.05}px`, color: config.text_color + 'dd' }}>
-                  Spanning three generations and two continents, <em>The Earth Remembers</em> weaves between 1936 wartime Spain and present-day New Mexico, tracing a bloodline of women who buried their truths in the soil and trusted the land to keep them safe.
+                  As I got older, especially after my divorce, I legally dropped my middle name when I switched back to my birth last name. At the time, I didn’t understand the name or its significance to me, and it seemed easier not to use it. But like roots that run deep and quietly hold things together, Markeba remained a part of me, even when I tried to let it go.
                 </p>
                 <p className="font-body leading-relaxed" style={{ fontSize: `${baseSize * 1.05}px`, color: config.text_color + 'dd' }}>
-                  Part mystery, part love letter to the natural world, this novel asks: <em>What happens when the ground beneath us starts speaking — and we finally choose to listen?</em>
+                  Later on, as I worked through personal reflections and wrote the passages you'll soon read, I found myself curious enough to search for the meanings behind my middle name. To my surprise, I discovered there were many ways to spell and interpret it. Some definitions are connected to ideas, like light, spirit, and body, especially in reference to a word called Merkaba. The meanings I found reflected my own journey, different parts coming together to create something strong, unique, and full of purpose.
                 </p>
               </div>
               <div className={`${inView ? 'animate-slide-right delay-300' : 'opacity-start'}`}>
@@ -83,7 +83,7 @@ import {defaultConfig} from '../Data/defaultConfig';
               </div>
               <div className="mt-6 pt-6" style={{ borderTop: `1px solid ${config.primary_action_color}10` }}>
                 <span className="w-fit inline-block px-4 py-1.5 rounded-full text-xs font-semibold font-body" style={{ background: '#9CAF8820', color: '#6B8F5B' }}>
-                  Literary Fiction · Historical · Family Saga
+                  Autobiography · Historical · Family Saga
                 </span>
               </div>
             </div>

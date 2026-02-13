@@ -3,10 +3,10 @@
     
     // Config state - manages all customizable values
     export const defaultConfig = {
-      book_title: "Markeba: Unpacking the Journey",
-      book_subtitle: "A Novel of Memory, Land & Belonging",
-      author_name: "Sontae Flowers",
-      tagline: "Unpacking the Journey",
+      book_title: "Markeba: Unpacking My Journey",
+      book_subtitle: "Finding My Voice Page by Page",
+      author_name: "Sontae Markeba Flowers",
+    //   tagline: "Unpacking the Journey",
       hero_cta_text: "Buy Now",
       newsletter_heading: "Stay Connected",
       background_color: "#FFF8F0",
