@@ -32,7 +32,7 @@ function App({config = defaultConfig} ) {
             <div className="section-divider mx-auto w-4/5 max-w-2xl"/>
             <Media />
             <div className="section-divider mx-auto w-4/5 max-w-2xl"/> */}
-            <Purchase />
+            {/* <Purchase /> */}
             <div className="section-divider mx-auto w-4/5 max-w-2xl"/>
             {/* <Contact /> */}
           </main>

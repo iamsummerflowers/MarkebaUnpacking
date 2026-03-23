@@ -33,7 +33,7 @@ function Hero({config = defaultConfig}) {
           
           >
             <div className="xxbg-red-400 flex flex-col md:flex-row items-center gap-12 xxmd:gap-26 xxlg:gap-2">
-              <div className={`xxbg-yellow-400 px-20 xxflex-1 text-center mx-auto md:text-left mx-auto xxmb-40 ${inView ? 'animate-slide-left' : 'opacity-start'}`}>
+              <div className={`xxbg-yellow-400 px-10 xxflex-1 text-center mx-auto md:text-left mx-auto xxmb-40 ${inView ? 'animate-slide-left' : 'opacity-start'}`}>
                 <span
                   className="inline-block px-4 py-1.5 rounded-full w-fit text-xs font-semibold tracking-widest uppercase mb-6 font-body"
                   style={{ background: config.primary_action_color + '25', color: '#fbb022' }}
@@ -41,7 +41,7 @@ function Hero({config = defaultConfig}) {
                   New Release — Available Now
                 </span>
                 <h1
-                  className="xxbg-red-400 w-fit text-center px-0 mx-0 font-display font-bold leading-tight mb-6"
+                  className="w-fit font-display font-bold leading-tight mb-6"
                   style={{
                     fontFamily: `${config.font_family}, 'Playfair Display', Georgia, serif`,
                     fontSize: `${baseSize * 2}px`,
@@ -76,7 +76,7 @@ function Hero({config = defaultConfig}) {
                   <button
                     className="px-8 py-3.5 rounded-full font-semibold text-white border-none cursor-pointer font-body animate-pulse-glow"
                     style={{ background: `linear-gradient(135deg, ${config.primary_action_color}, ${config.primary_action_color}dd)`, fontSize: `${baseSize}px` }}
-                    onClick={() => document.getElementById('buy')?.scrollIntoView({ behavior: 'smooth' })}
+                    onClick={() => window.open('https://square.link/u/aLinsdc7', '_blank')}
                   >
                     {config.hero_cta_text}
                   </button>

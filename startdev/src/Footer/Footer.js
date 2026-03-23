@@ -21,7 +21,7 @@ import {defaultConfig} from '../Data/defaultConfig';
               by {config.author_name}
             </p>
             <p className="font-body text-xs" style={{ color: '#FAF0E655' }}>
-              © {currentYear} {config.author_name}. Published by Beyond Sight Solutions. All rights reserved.
+              © {currentYear} Markeba Blossoms. All rights reserved.
             </p>
           </div>
         </footer>
