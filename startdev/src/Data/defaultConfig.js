@@ -3,7 +3,7 @@
     
     // Config state - manages all customizable values
     export const defaultConfig = {
-      book_title: "Markeba: Unpacking My Journey",
+      book_title: "MARKEBA Unpacking My Journey",
       book_subtitle: "Finding My Voice Page by Page",
       author_name: "Sontae Markeba Flowers",
     //   tagline: "Unpacking the Journey",
