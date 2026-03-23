@@ -70,10 +70,10 @@ import {defaultConfig} from '../Data/defaultConfig';
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {[
-                  { label: 'Release Date', value: 'March 18, 2025' },
-                  { label: 'Publisher', value: 'Meridian Press' },
-                  { label: 'Pages', value: '384' },
-                  { label: 'ISBN', value: '978-0-13-468599-7' }
+                  { label: 'Release Date', value: 'March 30, 2025' },
+                  { label: 'Publisher', value: 'Barnes & Noble' },
+                  { label: 'Pages', value: '76' },
+                  { label: 'ISBN', value: '9 798279684618' }
                 ].map((d, i) => (
                   <div key={i}>
                     <span className="font-body text-xs font-semibold tracking-widest uppercase block mb-1" style={{ color: config.primary_action_color }}>{d.label}</span>
@@ -83,7 +83,7 @@ import {defaultConfig} from '../Data/defaultConfig';
               </div>
               <div className="mt-6 pt-6" style={{ borderTop: `1px solid ${config.primary_action_color}10` }}>
                 <span className="w-fit inline-block px-4 py-1.5 rounded-full text-xs font-semibold font-body" style={{ background: '#9CAF8820', color: '#6B8F5B' }}>
-                  Autobiography · Historical · Family Saga
+                  Autobiography · Emotional Healing · Personal Growth
                 </span>
               </div>
             </div>
